@@ -1,0 +1,608 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"e",
+				"else"
+			],
+			[
+				"the",
+				"Thread"
+			],
+			[
+				"re",
+				"retraso"
+			],
+			[
+				"led",
+				"ledStdo"
+			],
+			[
+				"ti",
+				"TimerSeg"
+			],
+			[
+				"T",
+				"TimerSeg"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"GP",
+				"GPIO"
+			],
+			[
+				"web",
+				"websocket"
+			],
+			[
+				"w",
+				"WSGIContainer"
+			],
+			[
+				"htt",
+				"HTTPServer"
+			],
+			[
+				"f",
+				"from"
+			],
+			[
+				"fu",
+				"fuente"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ho",
+				"host"
+			],
+			[
+				"ta",
+				"tasks"
+			],
+			[
+				"fl",
+				"flash"
+			],
+			[
+				"wh",
+				"where"
+			],
+			[
+				"ex",
+				"execute"
+			],
+			[
+				"conn",
+				"connect_db"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"pri",
+				"priority"
+			],
+			[
+				"in",
+				"Intentelo"
+			],
+			[
+				"clo",
+				"closed_tasks"
+			],
+			[
+				"task",
+				"task_id"
+			],
+			[
+				"d",
+				"db"
+			],
+			[
+				"con",
+				"connect_db"
+			],
+			[
+				"log",
+				"login_requierd"
+			],
+			[
+				"fla",
+				"flash"
+			],
+			[
+				"tr",
+				"True"
+			],
+			[
+				"lo",
+				"logged_in"
+			],
+			[
+				"hm",
+				"html"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"_",
+				"__name__"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"son",
+				"song"
+			],
+			[
+				"so",
+				"song"
+			],
+			[
+				"m",
+				"music"
+			],
+			[
+				"src",
+				"script"
+			],
+			[
+				"me",
+				"MethodView"
+			],
+			[
+				"vi",
+				"views"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"view",
+				"view_func"
+			],
+			[
+				"t",
+				"test4"
+			],
+			[
+				"test",
+				"test3"
+			],
+			[
+				"te",
+				"test3"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"packe",
+				"Package Control: Remove Package"
+			],
+			[
+				"package con",
+				"Package Control: List Packages"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-navbar"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Push"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"contro",
+				"Package Control: Install Package"
+			],
+			[
+				"pake",
+				"Package Control: Install Package"
+			],
+			[
+				"floo",
+				"Floobits - Complete Sign Up"
+			],
+			[
+				"fllo",
+				"Floobits - Complete Sign Up"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 127.0,
+		"history":
+		[
+			"~\\.floorc help",
+			"~/.floorc help",
+			"~\\.floofc help",
+			"~/.floofc help",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"/floofc help",
+			"~/floofc help",
+			"~/.floofc help",
+			"sublime.packages_path()",
+			"cd /Users",
+			"cd /Users/LP-COD/Dropbox/Sublime Text 3 x64/Data/Packages",
+			"cd Users/LP-COD/Dropbox/Sublime Text 3 x64/Data/Package",
+			"cd /Users/LP-COD/Dropbox/Sublime Text 3 x64/Data/Package",
+			"cd C:/Users/LP-COD/Dropbox/Sublime Text 3 x64/Data/Package",
+			"cd /Dropbox/Sublime Text 3 x64/Data/Package",
+			"cd /Dropbox/Sublime Text 3 x64/Package",
+			"cd /Dropbox/Sublime Text 3/Package",
+			"dir",
+			"cd ~/Dropbox/Sublime Text 3/Package",
+			"sublime.packages_path()",
+			"Package Control.sublime-package",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/RC/Dropbox/Flask/hilospy/templates/index2.html",
+		"/C/Users/RC/Dropbox/Flask/hilospy/static/scripts/raspberry.js",
+		"/C/Users/rc/Dropbox/Flask/raspberry/gpio.py",
+		"/C/Users/RC/Dropbox/Flask/hilospy/gpio.py",
+		"/C/Users/RC/Dropbox/Flask/Tornado/shopping_cart.py",
+		"/C/Users/rc/Dropbox/Flask/raspberry/static/scripts/raspberry.js",
+		"/C/Users/rc/Dropbox/Flask/raspberry/templates/index2.html",
+		"/C/Users/RC/AppData/Local/Temp/7zOAD08.tmp/__init__.py",
+		"/C/Users/rc/Dropbox/Flask/raspberry/main.py",
+		"/C/Users/rc/Dropbox/Flask/raspberry/static/scripts/inventory.js",
+		"/C/Users/RC/Dropbox/Flask/Tornado/templates/index2.html",
+		"/C/Users/RC/Dropbox/Flask/Tornado/static/scripts/inventory.js",
+		"/C/Users/RC/Dropbox/Flask/Tornado/cyclon.py",
+		"/C/Users/rc/Dropbox/Flask/raspberry/.floo",
+		"/C/Users/RC/Dropbox/Flask/Tornado/templates/poem.html",
+		"/C/Users/RC/Dropbox/Flask/Tornado/templates/index.html",
+		"/C/Users/RC/Dropbox/Flask/Tornado/websocketJS.html",
+		"/C/Users/RC/Dropbox/Flask/serverSendEvents/cyclon.py",
+		"/C/Users/RC/Dropbox/Flask/serverSendEvents/index.html",
+		"/C/Users/RC/Dropbox/Flask/serverSendEvents/sse.php",
+		"/C/Users/RC/Dropbox/Flask/juggernaut/templates/template.html",
+		"/C/Users/RC/Dropbox/Flask/juggernaut/real.py",
+		"/C/Users/RC/Dropbox/Flask/realtime/real.py",
+		"/C/Python33/Lib/distutils/msvc9compiler.py",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/templates/template.html",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/flasktask.py",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/requirements.txt",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/venv_init.sh",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/main.py",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/templates/main.html",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/static/socket.io.js",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/static/main.js",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/main.css",
+		"/C/Users/rc/Dropbox/Flask/flask-sockets-tutorial/jquery.js",
+		"/C/Users/rc/Dropbox/Flask/databaseSqlite3/routes.py",
+		"/C/Users/rc/Dropbox/Flask/realtime/static/js/main.js",
+		"/C/Users/rc/Dropbox/Flask/realtime/real.py",
+		"/C/Users/rc/Dropbox/Flask/realtime/templates/home.html",
+		"/C/Users/rc/Dropbox/Flask/socketio/webapp.py",
+		"/C/Users/rc/Dropbox/Flask/realtime/templates/template.html",
+		"/C/Users/rc/Dropbox/Flask/flaskTask/templates/tasks.html",
+		"/C/Users/rc/Dropbox/Flask/flaskTask/templates/template.html",
+		"/C/Users/rc/Dropbox/Flask/flaskTask/flasktask.py",
+		"/C/Users/rc/Dropbox/Flask/databaseJson/flaskr.py",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/templates/tasks.html",
+		"/C/Users/rc/Dropbox/Flask/flaskTask/database.py",
+		"/C/Users/rc/Dropbox/Flask/flaskTask/templates/log.html",
+		"/C/Users/rc/Dropbox/Sublime Text 3 x64/Data/Packages/Git/Git.sublime-settings",
+		"/C/Users/rc/floobits/welcome.md",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/templates/log.html",
+		"/C/Users/RC/Dropbox/Flask/databaseSqlite3/routes.py",
+		"/C/Users/RC/Dropbox/Flask/databaseSqlite3/sales.py",
+		"/C/Users/RC/Dropbox/Flask/databaseSqlite3/templates/log.html",
+		"/C/Users/RC/Dropbox/Flask/databaseSqlite3/templates/home.html",
+		"/C/Users/RC/AppData/Local/Temp/Temp1_flask-master.zip/flask-master/examples/persona/static/style.css",
+		"/C/Users/RC/AppData/Local/Temp/Temp1_flask-master.zip/flask-master/examples/minitwit/static/style.css",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/static/css/style.css",
+		"/C/Users/RC/Dropbox/Flask/flaskTask/database.py",
+		"/C/Users/RC/Dropbox/Flask/sales.py",
+		"/C/Users/RC/Dropbox/Flask/templates/hello.html",
+		"/C/Users/RC/Dropbox/Flask/routes.py",
+		"/C/Users/RC/Dropbox/Flask/templates/log.html",
+		"/C/Users/RC/Dropbox/Flask/templates/welcome.html",
+		"/C/Users/RC/Dropbox/Flask/templates/home.html",
+		"/C/Users/RC/Dropbox/Flask/templates/template.html",
+		"/C/Users/RC/Dropbox/Flask/web_estatica/app.py",
+		"/C/Users/RC/Dropbox/Flask/web_estatica/utils.py",
+		"/C/Users/RC/Dropbox/Flask/database/flaskr.py",
+		"/C/Users/RC/Dropbox/Flask/database/flaskr.json",
+		"/C/Users/RC/Dropbox/Flask/databases/flaskr.py",
+		"/C/Users/RC/Dropbox/Flask/databases/flaskr.db",
+		"/C/Users/RC/Dropbox/Flask/databases/schema.sql",
+		"/C/Users/RC/Dropbox/Flask/databases/flaskr_tests.py",
+		"/C/Users/RC/Dropbox/Flask/templates/base.html",
+		"/C/Users/RC/Dropbox/Flask/app.py",
+		"/C/Users/RC/Downloads/webled.py",
+		"/C/Users/RC/Dropbox/Flask/remote.py",
+		"/C/Users/RC/Dropbox/Flask/music.py",
+		"/C/Users/RC/Dropbox/Flask/utils.py",
+		"/C/Users/RC/Dropbox/Flask/settings.py",
+		"/C/Users/RC/Dropbox/Flask/main.py",
+		"/C/Users/RC/Downloads/final/main.py",
+		"/C/Users/RC/Dropbox/Flask/login.py",
+		"/C/Users/RC/Downloads/final/login.py",
+		"/C/Users/RC/Downloads/final/app.py",
+		"/C/Users/RC/Dropbox/Flask/templates/music.html",
+		"/C/Users/RC/Dropbox/Flask/static/style.css",
+		"/C/Users/RC/Dropbox/Flask/static/funciones.js",
+		"/C/Users/RC/Dropbox/Flask/static/jquery2.js",
+		"/C/Users/RC/Dropbox/Flask/static/function.js",
+		"/C/Users/RC/Downloads/led.py",
+		"/C/Users/RC/Dropbox/Flask/templates/index.html",
+		"/C/Users/RC/Dropbox/Flask/templates/remote.html",
+		"/C/Users/RC/Dropbox/Flask/demo.py",
+		"/C/Users/RC/Dropbox/Sublime Text 3 x64/Data/Packages/User/Git.sublime-settings",
+		"/C/Users/RC/Dropbox/Sublime Text 3 x64/Data/Packages/Git/Git.sublime-settings",
+		"/C/Users/RC/Dropbox/Flask/.floo",
+		"/C/Users/RC/.floorc",
+		"/C/Users/RC/Dropbox/Flask/hola.py",
+		"/c/users/rc/dropbox/flask/.floo",
+		"/c/users/rc/dropbox/flask/.flooignore",
+		"/C/Users/RC/floobits/msgs.floobits.log",
+		"/C/Users/LP-COD/floobits/share/charlesrct/Prueba_on_line/floobits_readme.md",
+		"/C/Users/LP-COD/floobits/msgs.floobits.log",
+		"/C/Users/LP-COD/floobits/welcome.md",
+		"/C/Users/RC/Downloads/Package Control.sublime-package",
+		"/C/Users/RC/Dropbox/Sublime Text 3 x64/changelog.txt",
+		"/C/Users/LP-COD/floobits/share/charlesrct/Prueba_on_line/index.html",
+		"/C/Users/LP-COD/floobits/share/charlesrct/Prueba_on_line/prueba.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"terminate",
+			"CountdownTask",
+			"estado",
+			"distancia",
+			"elif action == 'ledoff':\n			self.application.raspberry.ledOFF(session)",
+			"		\n",
+			"count",
+			"write_message",
+			"value",
+			"get_argument",
+			"add-button",
+			"remove-from-cart",
+			"add-to-cart",
+			"moveItemToCart",
+			"requestInventory",
+			"requestInventory(",
+			"inventoryCount",
+			"ShoppingCart(",
+			"ShoppingCart",
+			"StatusHandler",
+			"status",
+			"requestInventory",
+			"cart",
+			"8000",
+			"index",
+			"base",
+			"print",
+			"new_task",
+			"task_id",
+			"closed_tasks",
+			"open_tasks",
+			"new_task",
+			"task",
+			"tasks",
+			"ftask",
+			"hello",
+			"url_for",
+			"render_template",
+			"login_requierd",
+			"']\n",
+			"hello",
+			"request",
+			"tuple",
+			"open",
+			"'m",
+			"'m'",
+			"before",
+			"req",
+			"comm",
+			"json",
+			"@",
+			">\n",
+			"scr",
+			"demo",
+			"('index",
+			"\">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"led-off",
+			"led-on"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "tornado.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
