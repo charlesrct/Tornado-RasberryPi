@@ -1,6 +1,6 @@
-//var ipDir = '//192.168.1.122:5000'
+var ipDir = '//192.168.1.122:5000'
 //var ipDir = '//192.168.1.107:5000'  
-var ipDir = '//192.168.0.6:5000'	//IP Casa
+//var ipDir = '//192.168.0.6:5000'	//IP Casa
 
 $(document).ready(function() {
 	document.session = $('#session').val();
