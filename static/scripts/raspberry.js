@@ -48,7 +48,7 @@ function requestRaspberry() {
 
 		//console.log($.parseJSON(evt.data))
 
-		if ($.parseJSON(evt.data)['estado'] != "null") {
+		if ($.parseJSON(evt.data)['estado'] != "-1") {
 			$('#estado').html($.parseJSON(evt.data)['estado']);
 		};
 
@@ -62,6 +62,10 @@ function requestRaspberry() {
 			$('#led-off').show();
 			$('#led-on').hide();
 			$('.count').html($.parseJSON(evt.data)['ledStdo']);
+		}
+		
+		if($.parseJSON(evt.data)['distancia'] > 0){
+			$('#dist').html($.parseJSON(evt.data)['distancia']);
 		}
 
 	};

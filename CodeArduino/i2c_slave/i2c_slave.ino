@@ -3,7 +3,7 @@
 
 #define SLAVE_ADDRESS 0x04
 int number = 0;
-int state = 0;
+
 //Led que indica la recepcion de un dato.
 int led = 13;
 
@@ -50,14 +50,10 @@ void receiveData(int byteCount) {
     number = Wire.read();
 
     if (number == 1) {
-      if (state == 0) {
-        digitalWrite(led, HIGH); // set the LED on
-        state = 1;
-      }
-      else {
-        digitalWrite(led, LOW); // set the LED off
-        state = 0;
-      }
+      digitalWrite(led, HIGH); // set the LED on
+    }
+    else {
+      digitalWrite(led, LOW); // set the LED off
     }
   }
 }

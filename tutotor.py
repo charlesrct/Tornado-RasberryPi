@@ -4,16 +4,26 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import json
+import time
+import threading
 from uuid import uuid4
 
 #libreria para usar el puerto GPIO
 import RPi.GPIO as GPIO
 
+#Libreria para comunicacion I2C con arduino.
+import smbus
+
+#Configurando I2C como master
+bus = smbus.SMBus(1)
+#Asignamos la direccion 0x04 que es la misma direccion del Arduino
+address = 0x04
+
 #configurando GPIO
-#pines por el numero impreso en la tarjeta,numeracion distribucion fisica 
+#pines por el numero impreso en la tarjeta, numeracion distribucion fisica 
 #GPIO.setmode(GPIO.BOARD)    
 #pines por el numero canal de las etiquetas.
-GPIO.setmode(GPIO.BCM)    	
+GPIO.setmode(GPIO.BCM)
 
 #Configurando el pin de salida
 GPIO.setup(11, GPIO.OUT)
@@ -30,14 +40,20 @@ def pinkCall(channel):
     inputValue = GPIO.input(11)
     
     if(inputValue == True):
+        #Apagamos el led desde el pulsador
         GPIO.output(11, False)
-        
-        pulsador.notifyCallbacks(0, 'El Led fue apagado por Hardware')
+        #Se envia el numero 0 al Arduino via I2C
+        bus.write_byte(address, 0)
+        #Se notifican todos los usuarios via Websockets
+        pulsador.notifyCallbacks(0, 'El Led fue apagado por Hardware', -1)
 
     if(inputValue == False):
+        #Encendemos el led desde el pulsador
         GPIO.output(11, True)
-        
-        pulsador.notifyCallbacks(1, 'El Led fue encendido por Hardware')
+        #Se envia el numero 1 al Arduino via I2C
+        bus.write_byte(address, 1)
+        #Se notifican todos los usuarios via Websockets
+        pulsador.notifyCallbacks(1, 'El Led fue encendido por Hardware', -1)
 
     print('Interrupcion por hardware')
 
@@ -46,7 +62,14 @@ GPIO.add_event_detect(swichtPin, GPIO.RISING, callback=pinkCall, bouncetime=500)
 
 class Raspberry(object):
 	callbacks = []
+	distancia = 0
 
+	def obDistancia(self):
+		distancia = bus.read_byte(address)	
+		self.notifyCallbacks(-1, '-1', distancia)
+		print('distancia= ', distancia)
+			
+		
 	def register(self, callback):
 		self.callbacks.append(callback)
 
@@ -56,23 +79,43 @@ class Raspberry(object):
 	def ledON(self):
             #Encendemos el Led conectado en el pin 11
             GPIO.output(11, True)
-            self.notifyCallbacks(1, "Led Encendido")
+            #Se envia el numero 1 al Arduino via I2C
+            bus.write_byte(address, 1)
+            #Se notifican todos los usuarios via Websockets
+            self.notifyCallbacks(1, "Led Encendido", -1)
+	    self.obDistancia()
 
 	def ledOFF(self):
             #Apagamos el Led conectado en el pin 11
             GPIO.output(11, False)
-            self.notifyCallbacks(0, "Led Apagado")
+            #Se envia el numero 0 al Arduino via I2C
+            bus.write_byte(address, 0)
+            #Se notifican todos los usuarios via Websockets
+            self.notifyCallbacks(0, "Led Apagado", -1)
 
-	def notifyCallbacks(self, ledStdo, estado):
+	def notifyCallbacks(self, ledStdo, estado, distancia):
 		for callback in self.callbacks:
-			callback(ledStdo, estado)
+			callback(ledStdo, estado, distancia)
+
+class CuentaDistancia(threading.Thread):
+	def run(self):
+		d = Raspberry()
+		n = 50
+		while True:
+			d.obDistancia()
+			time.sleep(1)
+
+th = CuentaDistancia()
+th.daemon = True
+th.start()
 
 class RenderHandler(tornado.web.RequestHandler):
 
 	def get(self):
 		session = uuid4()
 		estado = "...Iniciando"
-		self.render("index.html", session=session, estado=estado)
+		distancia = 0
+		self.render("index.html", session=session, estado=estado, distancia=distancia)
 
 
 class LedHandler(tornado.web.RequestHandler):
@@ -88,6 +131,8 @@ class LedHandler(tornado.web.RequestHandler):
 			self.application.raspberry.ledON()
 		elif action == 'ledoff':
 			self.application.raspberry.ledOFF()
+		elif action == 'distancia':
+			self.application.raspberry.obDistancia()
 		else:
 			self.set_status(400)
 
@@ -105,11 +150,12 @@ class RaspberryHandler(tornado.websocket.WebSocketHandler):
 		self.write_message('{"estado":"Mensaje Recibido"}')
 		print("Mensaje Recibido: {}" .format(message)) 	
 
-	def callback(self, ledStdo, estado):
+	def callback(self, ledStdo, estado, distancia):
 
 		self.write_message(json.dumps({
 			"ledStdo": ledStdo,
-			"estado": estado
+			"estado": estado,
+			"distancia": distancia
 			}))
 
 class Application(tornado.web.Application):
