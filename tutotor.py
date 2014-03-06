@@ -57,7 +57,6 @@ def pinkCall(channel):
 
     print('Interrupcion por hardware')
 
-
 GPIO.add_event_detect(swichtPin, GPIO.RISING, callback=pinkCall, bouncetime=500)
 
 class Raspberry(object):
@@ -68,7 +67,6 @@ class Raspberry(object):
 		distancia = bus.read_byte(address)	
 		self.notifyCallbacks(-1, '-1', distancia)
 		print('distancia= ', distancia)
-			
 		
 	def register(self, callback):
 		self.callbacks.append(callback)
@@ -77,21 +75,20 @@ class Raspberry(object):
 		self.callbacks.remove(callback)
 
 	def ledON(self):
-            #Encendemos el Led conectado en el pin 11
-            GPIO.output(11, True)
-            #Se envia el numero 1 al Arduino via I2C
-            bus.write_byte(address, 1)
-            #Se notifican todos los usuarios via Websockets
-            self.notifyCallbacks(1, "Led Encendido", -1)
-	    self.obDistancia()
+        #Encendemos el Led conectado en el pin 11
+        GPIO.output(11, True)
+        #Se envia el numero 1 al Arduino via I2C
+        bus.write_byte(address, 1)
+        #Se notifican todos los usuarios via Websockets
+        self.notifyCallbacks(1, "Led Encendido", -1)
 
 	def ledOFF(self):
-            #Apagamos el Led conectado en el pin 11
-            GPIO.output(11, False)
-            #Se envia el numero 0 al Arduino via I2C
-            bus.write_byte(address, 0)
-            #Se notifican todos los usuarios via Websockets
-            self.notifyCallbacks(0, "Led Apagado", -1)
+        #Apagamos el Led conectado en el pin 11
+        GPIO.output(11, False)
+        #Se envia el numero 0 al Arduino via I2C
+        bus.write_byte(address, 0)
+        #Se notifican todos los usuarios via Websockets
+        self.notifyCallbacks(0, "Led Apagado", -1)
 
 	def notifyCallbacks(self, ledStdo, estado, distancia):
 		for callback in self.callbacks:
