@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>RaspBerry Pi Real Time</title>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+		<script src="{{ static_url('scripts/raspberry.js') }}" type="application/javascript"></script>
+
+</head>
+<body>
+	
+		<div>
+			<h1>RaspBerry Pi Real Time</h1>
+			<p><span>Estado de la conexión: <span style="color: red;" id="estado">{{ estado }}</span> ..:: By RaspBerryPi ::..</span></p>
+		</div>
+
+		<hr />
+
+		<input type="hidden" id="session" value="{{ session }}" />
+
+		<div id="led-on">
+			<p><input type="submit" value="Encender El Led" id="add-button" /></p>
+		</div>
+
+		<div id="led-off" style="display: none;">
+			<p><input type="submit" value="Apagar El Led" id="remove-button" /></p>
+		</div>
+		<hr />
+		<div>
+			<h2>Distancia por Ultrasonido</h2>
+			<p><span>&nbsp;&nbsp;&nbsp;<span style="color: blue;" id="dist">{{ distancia }}</span> cm ..:: By Arduino Leonardo ::..</span></p>
+		</div>
+
+</body>
+</html>
